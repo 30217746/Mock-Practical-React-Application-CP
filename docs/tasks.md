@@ -76,12 +76,6 @@ Copy this template for each entry:
 -
 ```
 
-### What a good entry looks like
-
-> **Why I did it this way**
->
-> - I put the foreign key `directorId` on `Film`, not on `Director`. Each film has only one director, so one column holds it. If I put it on `Director` I would need a list of film IDs in one column, which a relational database cannot store properly.
-
 ### What a weak entry looks like
 
 > **Why I did it this way**
@@ -313,12 +307,10 @@ Open the template in `docs/relationships.md` and follow the "How to fill this in
 
 Each section answers the same four questions:
 
-1. **Which tables are linked, and what type of relationship is it?** One-to-one, one-to-many or many-to-many.
-2. **What is the cardinality in plain English?** One sentence from each side, for example: "One director can have zero or many films. Each film must have exactly one director."
-3. **How is it built in the database?** Which table holds the foreign key and what the column is called, or, for many-to-many, the join table's name and columns (check your `migration.sql` from Task 3).
-4. **Why did I build it this way?** Link it back to the rules in Tasks 2 and 3, explain where the foreign key or join table is, and say whether you made anything optional.
-
-Replace the hint lines (the ones starting with `>`) with your answers. The worked example (authors and books) shows what a good answer looks like.
+1. **Which tables are linked, and what type of relationship is it?**
+2. **What is the cardinality in plain English?**
+3. **How is it built in the database?**
+4. **Why did I build it this way?**
 
 ---
 

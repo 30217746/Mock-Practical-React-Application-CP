@@ -4,6 +4,7 @@
 
   // List of extensions which should be recommended for users of this workspace.
   "recommendations": [
+    "streetsidesoftware.code-spell-checker",
     "dotenv.dotenv-vscode",
     "shd101wyy.markdown-preview-enhanced",
     "christian-kohler.npm-intellisense",
